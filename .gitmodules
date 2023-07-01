@@ -1,0 +1,6 @@
+[submodule "karada"]
+	path = karada
+	url = https://github.com/minimarimo/karada
+[submodule "tamashii"]
+	path = tamashii
+	url = https://github.com/minimarimo/tamashii

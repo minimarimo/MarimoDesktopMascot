@@ -1,0 +1,46 @@
+// これはtamashiiとkaradaが通信するためのプロトコルを定義するファイルです。
+// このファイルそのものが使用されるわけではなく、このファイルを元に
+// protocol.pyとprotocol.csが生成されます。
+[
+    { // 発言してもらいます
+        "command": "say",
+        "args": {
+            "message": [
+                "最初のキャラの発言",
+                "2番目のキャラの発言",
+                "3番目(いないなら最初)のキャラの発言"
+            ]
+        }
+    },
+    { // 一定時間寝てもらいます
+        "command": "sleep",
+        "args": {
+            "time": 1.0
+        }
+    },
+    { // これは完全なテスト用であり、デバッグのために使用しています
+        "command": "test",
+        "args": {
+            "message": "テストメッセージ",
+            "time": 1.0,
+            "number": 1,
+            "boolean": true,
+            "list": [
+                "テストメッセージ",
+                "1.0"
+            ],
+            "nest": {
+                "key": "value",
+                "message": "テストメッセージ",
+                "time": 1.0,
+                "number": 1,
+                "boolean": true,
+                "hogeofoajweiojfoiaewiofeioawfoaw": [
+                    "hoge",
+                    "fuga",
+                    "piyo"
+                ]
+            }
+        }
+    }
+]
